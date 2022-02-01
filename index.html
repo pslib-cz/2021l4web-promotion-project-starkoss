@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eggscelent</title>
+    <meta name="description" content="Unikátní stojan na vajíčka Eggscelent liberecké společnosti S-DESIGN přináší revoluci do servírování vajíček na hniličku pro všechny.">
+    <title>S-DESIGN | Stojan na vajíčka</title>
+    
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/typo.css">
-    <link rel="stylesheer" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <span>S</span>
-            <span>-DESIGN</span>
+            <img src="./img/S-Design.svg" alt="logo společnosti S-Design">
         </div>
-        <ul>
-            <li><a href="#about_us">O nás</a></li>
-            <li><a href="#about_product">O produktu</a></li>
-            <li><a href="#manufactoring">Výroba</a></li>
-            <li><a href="#gallery">Galerie</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
+        </div>
+        <div class="hamburger">
+            <a href="#" onclick="menuOnOff()"><img src="./img/hamburger.svg" alt="menu button"></a>
+        </div>
+        <div class="topnav hidden" id="myTopnav">
+            <ul>
+                <li><a href="#about_us">O nás</a></li>
+                <li><a href="#about_product">O produktu</a></li>
+                <li><a href="#manufacturing">Výroba</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <div class="intro">
-            <h1>Stojan Eggscelent</h1>
-            <span>"elegantní, excelentní"</span>
-            <figure>
+            <figure class="intro intro-img">
                 <img src="./img/set_drzak_na_vajicka_small.jpg" alt="Stojan na vajíčka Eggscelent">
             </figure>
         </div>
-        
+
         <div class="about_us" id="about_us">
-            <div class="about_us-wrap">
-                <div class="about_us-picture">
+            <div class="about_us about_us-wrap">
+                <div class="about_us about_us-picture">
                     <img src="./img/profil.jpg" alt="Zakladatel společnosti S-Design Jakub Stárek">
                 </div>
                 <div class="about_us-text">
-                    <h2>O nás</h2>
+                    <h1>Stojan na vajíčka Eggscelent</h1>
                     <p>Společnost S-Design vznikla v Liberci roku 2021. Byla založena Jakubem Stárkem, studentem zdejší Střední průmyslové školy strojní a elektrotechnické oboru technické lyceum toho času ve 4. ročníku.
                         Samotný projekt vznikal v rámci 4 předmětů, Průmyslového výtvarnictví, kde byl vytvořen prvotní návrh, Multimédiích, ve kterých vznikl samotný nápad projektu realizace a nafocení materiálů, Webových aplikací, kde došlo k tvorbě grafického designu webových stránek a nakonec Ekonomii, kde byla stanovena obchodní strategie pro výrobu a prodej.</p>
                 </div>
@@ -127,6 +132,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        let menuOnOff = function() {
+            document.getElementById("myTopnav").classList.toggle("hidden");
+        }
+    </script>
 </body>
 
 </html>

@@ -2,6 +2,125 @@
     --dark-gray: #d8d8d8;
     --light-gray: #e6e6e6;
     --orange: #ffa200;
-    --white: #fff;
-    --black: #000;
+    --text-light: #fff;
+    --text-dark: #000;
+}
+/*header*/
+header{
+    background-color: var(--dark-gray); 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 100vw; 
+    margin: auto; 
+    position: fixed; 
+    top: 0; 
+    z-index: 1; 
+    box-shadow: 0 2px 6px 0 var(--light-gray); 
+}
+
+/*logo*/
+.logo{
+    margin: auto 0 auto 1em
+}
+
+/*horní navigace*/
+.topnav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.topnav ul{
+    padding: 0;
+    margin: 0 1rem 0 0;
+    list-style: none;
+}
+
+.topnav ul li{
+    display: inline-block;
+    text-align: center;
+}
+
+.topnav ul li a{
+    display: block;
+    padding: 1rem;
+}
+.topnav ul li a:hover{
+    color: var(--light-gray);
+}
+
+/* hide/show hamburger */
+.hidden {
+    display: none;
+}
+
+/*prvni blok*/
+
+.intro{
+    width: 100vw;
+}
+
+.intro-img{
+    width: 375px;
+    height: 375px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.intro-img img{
+    width: 100%;
+    height: auto;
+}
+
+.about_us-picture{
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--light-gray);
+}
+
+.about_us-picture img{
+    height: auto;
+    width: 100%;
+}
+
+/*layout*/
+
+@media only screen and (min-width: 761px) {
+    .hidden {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .topnav{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .topnav ul{
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+    .topnav ul li{
+        display: block;
+    }
+    header{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .hamburger{
+        margin-left: auto;
+    }
+    .hamburger a{
+        display: block;
+        height: 18px;
+        padding: 25.5px 1rem;
+        text-align: center;
+    }
 }
