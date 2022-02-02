@@ -54,26 +54,36 @@ header{
     display: none;
 }
 
-/*prvni blok*/
-
-.intro{
-    width: 100vw;
+/**/
+.text{
+    margin: 1em;
 }
 
-.intro-img{
-    width: 375px;
-    height: 375px;
-    margin: 0;
-    overflow: hidden;
+.wrap{
+    margin: 0 auto;
+    padding: 1em;
+    max-width: 1360px;
+    background-color: inherit;
 }
 
-.intro-img img{
+.picture{
+    max-width: 660px;
+
+}
+
+.picture img{
     width: 100%;
     height: auto;
 }
 
+/*O nás*/
+.about_us{
+    background-color: var(--orange);
+    margin-top: 69px;
+}
+
 .about_us-picture{
-    margin: 0 auto;
+    margin: 10px auto;
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -85,6 +95,17 @@ header{
     height: auto;
     width: 100%;
 }
+/*O produktu*/
+.about_product{
+    background-color: var(--light-gray);
+}
+
+/*Výroba*/
+.manufacturing{
+    background-color: var(--text-dark);
+    color: var(--text-light);
+}
+
 
 /*layout*/
 
@@ -124,3 +145,4 @@ header{
         text-align: center;
     }
 }
+
