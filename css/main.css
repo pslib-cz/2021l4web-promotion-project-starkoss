@@ -32,7 +32,7 @@ header{
 }
 .topnav ul{
     padding: 0;
-    margin: 0 1rem 0 0;
+    margin: 0 1em 0 0;
 }
 
 .topnav ul li{
@@ -42,7 +42,7 @@ header{
 
 .topnav ul li a{
     display: block;
-    padding: 1rem;
+    padding: 1em;
 }
 .topnav ul li a:hover{
     background-color: var(--light-gray);
@@ -131,6 +131,7 @@ header{
 
 footer{
     background-color: var(--dark-gray);
+    padding-top: 1em;
 }
 
 .footer_wrap{
@@ -139,13 +140,13 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1280px;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.5em;
     margin: 0 auto;
 }
 /**/
 .footer_top h3{
     margin: 0;
-    padding: 1rem;
+    padding: 1em;
     text-align: center;
 }
 
@@ -154,7 +155,7 @@ footer{
 }
 
 .footer_top ul{
-    padding: 0 3rem;
+    padding: 0 3em;
     margin: 0;
     text-align: center;
 }
@@ -164,7 +165,7 @@ footer{
 }
 
 .footer_top ul li a{
-    padding: 0.2rem 0;
+    padding: 0.2em 0;
 }
 
 .footer_top ul li a:hover{
@@ -172,14 +173,14 @@ footer{
 }
 
 .footer_top address{
-    padding: 0 3rem;
+    padding: 0 3em;
     margin: 0;
     text-align: center;
 }
 
 .footer_top address p{
     margin: 0;
-    padding: 0.2rem 0;
+    padding: 0.2em 0;
 }
 
 .footer_top address p a:hover{
@@ -192,18 +193,18 @@ footer{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    margin-top: .5rem;
+    margin-top: .5em;
 }
 
 .footer_soc h3{
     margin: 0;
-    padding: 1rem;
+    padding: 1em;
     text-align: right;
     display: none;
 }
 /*footer ikony*/
 .fb{
-    padding: 1rem;
+    padding: 1em;
     text-align: right;
 }
 
@@ -216,7 +217,7 @@ footer{
 
 /**/
 .ig{
-    padding: 1rem;
+    padding: 1em;
     text-align: right;
 }
 
@@ -262,12 +263,15 @@ footer{
     .hamburger a{
         display: block;
         height: 18px;
-        padding: 25.5px 1rem;
+        padding: 25.5px 1em;
         text-align: center;
     }
 
     .about_us{
         margin-top: 69px;
+    }
+    .about_us-picture{
+        margin-top: 1em;
     }
 }
 
