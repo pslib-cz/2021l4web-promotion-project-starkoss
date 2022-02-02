@@ -10,6 +10,7 @@
     
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/typo.css">
+    <link rel="stylesheet" href="./icomoon/style.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -17,7 +18,6 @@
     <header>
         <div class="logo">
             <img src="./img/S-Design.svg" alt="logo společnosti S-Design">
-        </div>
         </div>
         <div class="hamburger">
             <a href="#" onclick="menuOnOff()"><img src="./img/hamburger.svg" alt="menu button"></a>
@@ -49,7 +49,7 @@
         <div class="about_product" id="#about_product">
             <div class="wrap">
                 <div class="picture">
-                    <img src="./img/odkladova_deska_small.jpg" alt="Odkladová deska stojanu Eggscelent">
+                    <img src="./img/odkladova_deska_middle.jpg" alt="Odkladová deska stojanu Eggscelent">
                 </div>
                 <div class="text">
                     <h2>O produktu</h2>
@@ -65,7 +65,7 @@
         <div class="manufacturing" id="manufacturing">
             <div class="wrap">
                 <div class="picture">
-                    <img src="./img/stojan_small.jpg" alt="Prototyp stojanu na vajíčka Eggscelent">
+                    <img src="./img/stojan_middle.jpg" alt="Prototyp stojanu na vajíčka Eggscelent">
                 </div>
                 <div class="text">
                     <h2>Výroba</h2>
@@ -79,21 +79,25 @@
         </div>
 
         <div class="gallery" id="gallery">
-            <div class="gallery-wrap">
-                <h2>Galerie</h2>
-                <figure>
+            <div class="wrap">
+                <div class="text">
+                    <h2>Galerie</h2>
+                </div>
+            </div>
+            <div class="gallery_block">
+                <figure class="gallery_item">
                     <img src="./img/set_drzak_na_vajicka_small.jpg" alt="Model držáku na vajíčko setu Eggscelent">
                     <figcaption>Zkompletovaný set držáku na vajíčka Eggscelent</figcaption>
                 </figure>
-                <figure>
+                <figure class="gallery_item">
                     <img src="./img/odkladova_deska_small.jpg" alt="Model odkladové desky setu Eggscelent">
                     <figcaption>Podkladová deska setu Eggscelent</figcaption>
                 </figure>
-                <figure>
+                <figure class="gallery_item">
                     <img src="./img/drzak_na_skorapky_small.jpg" alt="Odkladiště na skořápky setu Eggscelent">
                     <figcaption>Odkladiště pro skořápky setu Eggscelent</figcaption>
                 </figure>
-                <figure>
+                <figure class="gallery_item">
                     <img src="./img/drzak_na_vajicko_small.jpg" alt="Model držáku na vajíčko setu Eggscelent">
                     <figcaption>Držák vajíčka setu Eggscelent</figcaption>
                 </figure>
@@ -102,27 +106,39 @@
     </main>
 
     <footer>
-        <div class="wrap">
-            <div class="contact" id="contact">
-                <h3>Kontakt</h3>
-                <p>S-DESIGN s.r.o.</p>
-                <p>Jakub Stárek</p>
-                <a href="tel:+420456789123">+420 456 789 123</a>
-                <a href="mailto:starek@s-design.cz">starek@s-design.cz</a>
-            </div>
-            
-            <div class="navigation">
+        <div class="footer_wrap">
+            <div class="footer_top">
                 <h3>Navigace</h3>
                 <ul>
                     <li><a href="#about_us">O nás</a></li>
                     <li><a href="#about_product">O produktu</a></li>
-                    <li><a href="#manufactoring">Výroba</a></li>
+                    <li><a href="#manufacturing">Výroba</a></li>
                     <li><a href="#gallery">Galerie</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
+            <div class="footer_top">
+                <h3>Kontakt</h3>
+                <address>
+                    <p>S-DESIGN s.r.o.</p>
+                    <p>CEO</p>
+                    <p>Jakub Stárek</p>
+                    <p><a href="tel:+420123456789"><span class="icon-icon_phone_white"></span>+420 123 456 789</a></p>
+                    <p><a href="mailto://starek@s-design.cz">starek@s-design.cz</a></p>
+                </address>
+            </div>
+            <div class="footer_soc">
+                <h3>#Socky</h3>
+                <div class="fb">
+                    <a href="https://www.facebook.com/" target="_blank">facebook<span class="icon-icon_fb"></span></a>
+                </div>
+                <div class="ig">
+                    <a href="https://www.instagram.com/" target="_blank">instagram<span class="icon-icon_ig"></span></a>
+                </div>
+            </div>
         </div>
     </footer>
+
     <script>
         let menuOnOff = function() {
             document.getElementById("myTopnav").classList.toggle("hidden");

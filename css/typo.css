@@ -18,7 +18,19 @@ h2{
     font-size: 24px;
 }
 
+h3{
+    font-size: 16px
+}
+
+footer{
+    font-size: 14px;
+}
+
 a{
     color: var(--text-dark);
     text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
 }
