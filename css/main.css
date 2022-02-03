@@ -309,11 +309,19 @@ footer{
 @media only screen and (min-width: 960px){
     .wrap{
         display: grid; 
-  grid-template-columns: 1fr 2fr; 
-  grid-template-rows: 1fr; 
-  gap: 1em 1em; 
-  grid-template-areas: 
-    ". ."; 
-    align-items: center; 
+        grid-template-columns: 1fr 2fr; 
+        grid-template-rows: 1fr; 
+        gap: 1em 1em; 
+        grid-template-areas: 
+        ". ."; 
+        align-items: center; 
     }
+
+    .about_us .wrap, .manufacturing .wrap{
+        grid-template-columns: 2fr 1fr;
+    }
+    .about_us-picture, .manufacturing .picture{
+        order: 2;
+    }
+
 }
